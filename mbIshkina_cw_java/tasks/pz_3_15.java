@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class pz_2_15 {
+public class pz_3_15 {
     public static void main(String[]args) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();

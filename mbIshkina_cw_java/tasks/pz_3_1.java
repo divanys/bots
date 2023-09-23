@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pz_2_1 {
+public class pz_3_1 {
     public static void main(String[]args) {
         Scanner scan = new Scanner(System.in);
         String str1 = scan.nextLine();

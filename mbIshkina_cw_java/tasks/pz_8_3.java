@@ -29,9 +29,8 @@ public class pz_8_3 {
         numbers.set(m, s);
 
         System.out.println("Обновленный список чисел:");
-        for (String number : numbers) {
-            System.out.print(number + " ");
-        }
+        System.out.println(String.join(" ", numbers));
+
     }
 }
 

@@ -27,9 +27,8 @@ public class pz_8_5 {
         }
 
         System.out.println("Оставшиеся вещи на стуле:");
-        for (String item : stack) {
-            System.out.print(item + " ");
-        }
+        System.out.println(String.join(" ", stack));
+
     }
 }
 

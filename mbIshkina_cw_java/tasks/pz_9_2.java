@@ -35,9 +35,8 @@ public class pz_9_2 {
 
         List<String> employees = professionEmployees.get(mostPopularProfession);
 
-        for (String employee : employees) {
-            System.out.println(employee);
-        }
+        System.out.println(String.join(" ", employees));
+
     }
 }
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pz_1_5 {
+public class pz_2_5 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите число: ");

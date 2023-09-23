@@ -4,7 +4,7 @@
 */
 import java.util.Scanner;
 
-public class pz_4_2 {
+public class pz_5_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите количество элементов в массиве:");

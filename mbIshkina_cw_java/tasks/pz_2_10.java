@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pz_1_10 {
+public class pz_2_10 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите h: ");

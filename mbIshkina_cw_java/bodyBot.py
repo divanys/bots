@@ -48,9 +48,13 @@ async def on_start(message: types.Message):
 async def non_start(message: types.Message):
     await message.reply("Нет, блин, пуфик")
 
+@dp.message_handler(commands=['koshkina'])
+async def non_start(message: types.Message):
+    await message.reply("Любимый препод🥺")
+
 @dp.message_handler(commands=['divan_loh'])
 async def ot_start(message: types.Message):
-    await message.reply("Сам такой")
+    await message.reply("Сама такая, лер")
 
 
 # Обработка текстовых сообщений

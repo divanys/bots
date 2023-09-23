@@ -15,27 +15,34 @@ import java.util.Scanner;
 public class pz_6_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ввести количество строк: ");
+        System.out.println("Введите количество строк: ");
         int n = scanner.nextInt();
-        System.out.println("Ввести количество столбцов: ");
+        System.out.println("Введите количество столбцов: ");
         int m = scanner.nextInt();
-        int[][] mas = new int[n][m];
-        System.out.println("Ввести данные: ");
+        int[][] mass = new int[n][m];
+        int[][] mass_trans = new int[m][n];
+        System.out.println("Введите данные: ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                mas[i][j] = scanner.nextInt();
+                mass[i][j] = scanner.nextInt();
             }
         }
-        int[][] mas_trans = new int[m][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                    mas_trans[j][n-i-1] = mas[i][j];
-                }
+                mass_trans[j][n-i-1] = mass[i][j];  // Меняем элементы (к примеру 2-0-1; 2-1-1)
             }
-
+        }
+        System.out.println("Исходная матрица: ");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(mass[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println("Полученная матрица: ");
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.print(mas_trans[i][j] + " ");
+                System.out.print(mass_trans[i][j] + " ");
             }
             System.out.println();
         }

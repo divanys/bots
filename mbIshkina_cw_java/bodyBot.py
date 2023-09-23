@@ -3,7 +3,6 @@
 
 import logging
 from aiogram import Bot, Dispatcher, types
-from aiogram.types import ParseMode
 from aiogram.types import InputFile
 from aiogram.utils import executor
 from aiogram import types

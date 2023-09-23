@@ -10,18 +10,18 @@ yyyy            1 0 0 0 1
 public class pz_8_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите чиселку: ");
+        System.out.println("Введите число n: ");
         int n = scanner.nextInt();
-
-        int[] lst = new int[n+2];
+        int[] lst = new int[n + 2];
         lst[0] = 1;
-        lst[n+1] = 1;
+        lst[n + 1] = 1;
         for (int i = 1; i <= n; i++) {
-                lst[i] = 0;
-            }
+            lst[i] = 0;
+        }
 
+        System.out.println("Вывод: ");
         for (int num : lst) {
             System.out.print(num + " ");
-            }
+        }
     }
 }

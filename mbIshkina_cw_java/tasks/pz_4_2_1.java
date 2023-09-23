@@ -1,18 +1,20 @@
 import java.util.Scanner;
 
 public class pz_4_2_1 {
-    public static void main(String[]args) {
-        Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число a: ");
+        int a = scanner.nextInt();
+        System.out.print("Введите число b: ");
+        int b = scanner.nextInt();
+
         int sum = 0;
-        if (a <= b) {
-            for (int i = a; i <= b; i++) {
-                sum += i;
-            }
-        } else {
-            System.out.println("nub");
+        int i = a;
+        while (i <= b) {
+            sum += i;
+            i++;
         }
-        System.out.println(sum);
+
+        System.out.println("Сумма чисел от " + a + " до " + b + " равна " + sum);
     }
 }

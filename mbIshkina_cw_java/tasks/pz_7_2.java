@@ -13,11 +13,11 @@ import java.util.Scanner;
 public class pz_7_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ввести данные: ");
-        String str1 = scanner.nextLine();
-        System.out.println("Ввести число для задания: ");
-        String str2 = scanner.next();
-        System.out.println(str1.indexOf(str2) + " " + str1.lastIndexOf(str2));
-
+        System.out.println("Веддите данные: ");
+        String data = scanner.nextLine();
+        System.out.println("Введите число для задания: ");
+        String number = scanner.next();
+        System.out.println("Цифра " + number + " имеет первое вхождение с индексом " + data.indexOf(number) +
+                " и последнее с индексом " + data.lastIndexOf(number));
     }
 }
